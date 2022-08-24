@@ -8,7 +8,7 @@ import { SearchContext } from '../App';
 const Navbar = ({filterCoin}) => {
   const [toggleInput,setToggleInput]=useState(false);
   const [searchValue,setSearchValue]= useState("");
-
+     
   const {toggleSearchIcon}=useContext(SearchContext);
 
   const handleValue=(e)=>{
@@ -20,9 +20,9 @@ const Navbar = ({filterCoin}) => {
     setToggleInput(!toggleInput);
   }
 
-  useEffect(()=>{
-    filterCoin(searchValue);
-  },[searchValue])
+
+
+
 
 
   useEffect(()=>{
